@@ -1,0 +1,25 @@
+{
+  "name": "russian-grammar",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/fwmakc/russian-grammar.git",
+  "author": "fwmakc <fwmakcpro@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint \"src/**/*.{js,mjs,cjs,ts,mts,cts}\" --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
