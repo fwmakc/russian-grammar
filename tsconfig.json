@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
+    "module": "commonjs",
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
+    "moduleResolution": "node",
     /* Bundler mode */
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
