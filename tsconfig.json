@@ -6,18 +6,8 @@
     "outDir": "./dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    /* Bundler mode */
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    /* Linting */
     "strict": true,
-    "strictPropertyInitialization": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-    "forceConsistentCasingInFileNames": true
+    "declaration": true,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

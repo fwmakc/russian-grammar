@@ -124,11 +124,6 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
-"@types/mime-types@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@types/mime-types/-/mime-types-3.0.1.tgz#7fb74656179257c27cd48aa503eb918811727115"
-  integrity sha512-xRMsfuQbnRq1Ef+C+RKaENOxXX87Ygl38W1vDfPHRku02TgQr+Qd8iivLtAMcR0KF5/29xlnFihkTlbqFrGOVQ==
-
 "@types/node@^24.1.0":
   version "24.2.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.2.0.tgz#cde712f88c5190006d6b069232582ecd1f94a760"
@@ -727,6 +722,13 @@ levn@^0.4.1:
   dependencies:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
+
+lib-file@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/lib-file/-/lib-file-0.1.0.tgz#59ea50191be58c91be6120a45f07554348ce8900"
+  integrity sha512-p28esu6fZa0q/oWHlgnHB+kuxo0AqnpSEILnp2Sqfyj+iQmu/diyipg1ZhiFFXcZRx5k/+MME+0kYvnEhb0Ycg==
+  dependencies:
+    mime-types "^3.0.1"
 
 locate-path@^6.0.0:
   version "6.0.0"
