@@ -1,28 +1,19 @@
-import { getch } from './std/';
-// import { getch, print } from './std/';
-// import { getch, input, print } from './std/';
-// import { File } from 'lib-file';
-// import os from 'os';
+import * as curses from 'lib-curses';
 
-export async function main(): Promise<any> {
-  // const name = await input('Как вас зовут? ');
-  // print(`Привет, ${name}!`);
+curses.initScreen();
+curses.hideCursor();
 
-  const key = await getch();
-
-  console.log(key);
-
-  if (key[0] === 3) {
-    return false;
-  }
-
-  let a = 0;
-  new Uint8Array(key).forEach((code) => {
-    // const r = `${('00' + code).slice(-3)}`;
-    // const r = `${('0' + code.toString(16)).slice(-2)}`;
-    a += code;
+export async function main(): Promise<boolean> {
+  const key = await curses.getch();
+  curses.clearScreen();
+  console.log({
+    uint8: new Uint8Array(key),
+    x16: [...new Uint8Array(key)].map((code) =>
+      `${'0' + code.toString(16)}`.slice(-2),
+    ),
+    utf8: key.toString(),
+    hex: key.toString('hex'),
   });
-  console.log(a);
 
   /*
   try {
